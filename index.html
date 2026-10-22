@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Интерактивный прототип А101 в экране 1920 × 1080. Скролл, фильтры и состояния страницы проекта.">
+  <title>А101 — Родные кварталы · прототип 1920 × 1080</title>
+  <link rel="icon" href="assets/52746.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="viewer.css">
+  <script src="viewer.js" defer></script>
+</head>
+<body>
+  <header class="viewer-header">
+    <div class="viewer-project"><span class="viewer-brand">А101</span><div><h1>Родные кварталы</h1><p>Интерактивный прототип</p></div></div>
+    <nav class="viewer-states" aria-label="Состояния прототипа"><button data-scene="top" aria-pressed="true">Первый экран</button><button data-scene="early" aria-pressed="false">Скролл</button><button data-scene="middle" aria-pressed="false">О проекте</button><button data-scene="about" aria-pressed="false">Фиксация фильтров</button></nav>
+    <div class="viewer-tools"><span class="viewer-dimensions">1920 × 1080</span><span id="viewer-scale" class="viewer-scale" aria-label="Масштаб экрана">100%</span><button class="fullscreen-button" id="fullscreen-button" aria-label="На весь экран" title="На весь экран">⛶</button></div>
+  </header>
+  <main id="viewer-area" class="viewer-area" aria-label="Макет экрана">
+    <div class="monitor">
+      <div class="screen-frame"><div class="screen-window" id="screen-window"><iframe id="prototype-frame" src="scene.html" title="Интерактивная страница проекта, экран 1920 на 1080" width="1920" height="1080" loading="eager" allow="autoplay; fullscreen"></iframe></div><span class="monitor-led" aria-hidden="true"></span></div>
+      <div class="monitor-neck" aria-hidden="true"></div><div class="monitor-base" aria-hidden="true"></div>
+    </div>
+  </main>
+  <footer class="viewer-footer"><span>Прокручивайте страницу внутри экрана</span><a href="https://www.figma.com/design/fknoyjL2gAd5ZjOf4hX5qn/?node-id=2108-5310" target="_blank" rel="noopener noreferrer">Макет в Figma ↗</a></footer>
+</body>
+</html>
